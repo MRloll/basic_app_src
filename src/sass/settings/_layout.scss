@@ -1,0 +1,97 @@
+
+*:not(i) {
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/*************
+    body
+*************/
+.container,
+body {
+    position: relative;
+}
+
+/*************
+    ul
+*************/
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/*************
+    section
+*************/
+footer,
+section {
+    padding-top: 100px;
+}
+
+/*************
+    a (link)
+*************/
+a {
+    outline: none;
+    color: inherit;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+/*************
+    Button
+**************/
+.button {
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 10px;
+    color: white;
+    background: $secColor;
+    background-size: 200%;
+    transition: all 0.5s ease;
+    &:hover {
+        background-position: right center;
+        color: white;
+    }
+}
+
+.capitlize {
+    text-transform: uppercase;
+}
+
+p {
+    color: #6a6972;
+}
+.line {
+    width: 150px;
+    height: 5px;
+    background: $secColor;
+    margin-bottom: 20px !important;
+}
+
+.title {
+    h3 {
+        color: inherit;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 42px;
+        span {
+            font-weight: 400;
+        }
+        @media only screen and (max-width: 1199px) and (min-width: 992px) {
+            font-size: 30px;
+        }
+        @media #{$maxMobile} {
+            font-size: 24px;
+        }
+    }
+    p {
+        margin: 30px 0;
+    }
+}

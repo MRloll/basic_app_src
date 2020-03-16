@@ -1,0 +1,36 @@
+@import "./settings/layout";
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+// .container {
+//     overflow-x: hidden;
+// }
+
+/*************
+    slick
+*************/
+.slick-dots {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+        transition: all 0.5s ease;
+        display: inline-block;
+        width: 11px;
+        height: 11px;
+        background: linear-gradient(to right, #fe6e9a 50%, #fe8464 100%);
+        margin: 5px;
+        cursor: pointer;
+        border-radius: 50%;
+        opacity: 0.5;
+        &.slick-active {
+            width: 16px;
+            height: 16px;
+            opacity: 1;
+        }
+    }
+}
