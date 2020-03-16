@@ -4,9 +4,11 @@ body {
     overflow-x: hidden;
 }
 
-// .container {
-//     overflow-x: hidden;
-// }
+@media (max-width: 1200px) {
+    .container {
+        overflow-x: hidden;
+    }
+}
 
 /*************
     slick
